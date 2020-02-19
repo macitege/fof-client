@@ -1,0 +1,28 @@
+
+$color-placeholder: #eee;
+$map-bg-color: #aaf;
+
+.map {
+  height: calc(calc(100vh) - 74px);
+  left: 0;
+  // max-width: 55vw;
+  padding: 0;
+  position: absolute;
+  width: 100vw;
+  z-index: 9;
+}
+
+.map-create-post {
+  background-color: $color-placeholder;
+  border-radius: 10px;
+  display: flex;
+  height: 30vw;
+  margin: 10px;
+  min-height: 300px;
+  min-width: 300px;
+  width: 100%;
+}
+
+.map-wrapper {
+  height: 100%;
+}

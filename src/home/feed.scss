@@ -1,0 +1,97 @@
+
+$color-placeholder: #0008;
+$post-bg-color: #afa;
+
+.feed {
+  font-family: 'Roboto', sans-serif;
+  background-color: $color-placeholder;
+  display: flex;
+  flex-direction: column;
+  height: calc(calc(100vh) - 74px);
+  min-width: 275px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  width: 45vw;
+  z-index: 10;
+  transition: all .3s ease-out;
+  // padding-top: 90px;
+
+  h3 {
+    color: #eee;
+    font-weight: 200;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  a {
+    color: #5FF;
+    margin: 5px;
+  }
+}
+
+.hide {
+  opacity: 0.5;
+  width: 0;
+  z-index: -2;
+  // position: absolute;
+}
+
+.close-posts {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: #eee;
+  z-index: 11;
+  position: absolute;
+  top: calc(calc(100vh) / 2);
+  right: -40px;
+
+  &:before {
+    content: '<|> ';
+
+  }
+}
+
+.loading {
+  margin: auto;
+}
+
+.post {
+  background-color: $color-placeholder;
+  border: 1px solid $color-placeholder;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  color: #eee;
+
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .delete-btn {
+    background-color: #E55;
+  }
+
+  button {
+    border-radius: 20px;
+  }
+
+  .picture-link {
+    display: block;
+
+    &::before {
+      content: '->';
+    }
+  }
+}

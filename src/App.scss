@@ -1,0 +1,68 @@
+$success: #c7f282;
+$warning: #f1e681;
+$error: #f08181;
+$charcoal: #ccc;
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.flash-success,
+.flash-warning,
+.flash-error {
+  border: 1px solid $charcoal;
+  display: block;
+  left: 25%;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  top: 15%;
+  width: 50%;
+  z-index: 1;
+}
+
+.flash-success {
+  background-color: $success;
+}
+
+.flash-warning {
+  background-color: $warning;
+}
+
+.flash-error {
+  background-color: $error;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15% auto 0;
+  max-width: 600px;
+
+  h3,
+  input {
+    margin-bottom: 5%;
+  }
+
+  button {
+    align-self: flex-end;
+    max-width: 200px;
+  }
+}
+
+.user-message {
+  padding: 0;
+  position: fixed;
+  width: 45%;
+  z-index: 99;
+
+  .alert-itself {
+    margin: 5px;
+    // width: 50%;
+  }
+}

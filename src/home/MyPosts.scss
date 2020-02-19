@@ -1,0 +1,22 @@
+.user-posts {
+  overflow-y: scroll;
+
+  h3 {
+    // color: #eee
+    font-weight: 200;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  a {
+    color: #5FF;
+    margin: 5px;
+  }
+}

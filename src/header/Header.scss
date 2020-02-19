@@ -1,0 +1,81 @@
+$charcoal: #bbb;
+$header-background: red;
+
+.main-header {
+  align-items: center;
+  // border-bottom: 1px solid $charcoal;
+  background-color: #967EEC;
+  display: flex;
+  height: 74px;
+  padding: 0 60px 0 20px;
+  justify-content: space-between;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+
+  a {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    margin: 0 15px;
+    color: #5BF;
+    background-color: white;
+  }
+
+  .greeting {
+    color: black;
+    font-weight: 900;
+    background-color: none;
+  }
+
+  .instructions {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 12px;   
+  }
+}
+
+.logo {
+  background-color: #0004;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 0;
+  margin-left: -50px;
+  color: white;
+}
+
+.main-header > nav {
+  align-items: center;
+  display: flex;
+  // flex-grow: 1;
+  justify-content: flex-end;
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    font-size: 0.7em;
+    height: auto;
+    padding: 10px;
+
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .main-header > nav {
+    flex-direction: column;
+    width: 100%;
+
+    a,
+    span {
+      border: 1px solid $charcoal;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 80%;
+    }
+  }
+}
